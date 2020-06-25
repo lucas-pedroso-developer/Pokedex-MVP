@@ -1,5 +1,5 @@
 import Foundation
 
-public protocol HttpGet {
-    func get(url: String, completion: @escaping (Result<Data?, DomainError>) -> ())
+public protocol GetPokemons {
+    func get(url: URL, completion: @escaping (Result<Pokemons, DomainError>) -> ())
 }
