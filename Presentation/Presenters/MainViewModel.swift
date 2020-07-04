@@ -2,10 +2,10 @@ import Foundation
 import Domain
 
 public struct MainViewModel: Model {
-    var count : Int?
-    var next : String?
-    var previous : String?
-    var results : [ResultsViewModel]?
+    public var count : Int?
+    public var next : String?
+    public var previous : String?
+    public var results : [ResultsViewModel]?
 
     public init(count: Int?, next: String, previous: String, results: [ResultsViewModel]?) {
         self.count = count
@@ -16,8 +16,8 @@ public struct MainViewModel: Model {
 }
 
 public struct ResultsViewModel : Model {
-    let name : String?
-    let url : String?
+    public let name : String?
+    public let url : String?
        
     public init(name: String? = nil, url: String? = nil) {
         self.name = name

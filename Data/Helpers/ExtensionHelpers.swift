@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public extension Data {
     func toModel<T: Decodable>() -> T? {
