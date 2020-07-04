@@ -3,7 +3,6 @@ import Data
 import Infra
 import Domain
 
-
 final class UseCaseFactory {
     private static let httpClient = AlamofireAdapter()
     private static let apiBaseUrl = Enviroment.variable(.apiBaseUrl)

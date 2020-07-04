@@ -112,8 +112,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        /*let newViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
-        
+    /*let newViewController = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         if searchActive {
             let url = (self.pokemonArrayFiltered[indexPath.item]?.url)!
             let id = Int(url.split(separator: "/").last!)!
@@ -123,9 +122,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             let id = Int(url.split(separator: "/").last!)!
             newViewController.id = id
         }
-        
         newViewController.transitioningDelegate = self
-        
         present(newViewController, animated: true, completion: nil)*/
     }
     
