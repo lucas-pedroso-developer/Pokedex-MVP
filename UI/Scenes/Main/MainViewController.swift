@@ -12,13 +12,13 @@ public final class MainViewController: UIViewController, Storyboarded {
     var searchController: UISearchController!
     var searchActive : Bool = false
     var isFinalToLoad : Bool = false
-    var jaPassou: Bool = false
     
     public var get: ((_ url: String) -> Void?)?
     
     @IBOutlet weak var MainViewController: UIActivityIndicatorView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,20 +138,28 @@ extension MainViewController: MainView {
         self.pokemons = viewModel
         self.pokemonArray.append(contentsOf: (viewModel?.results)!)
         self.collectionView.reloadData()
+        
     }
 }
 
 extension MainViewController: UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {}
-        
+    
     public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        search(searchBar: searchBar, textDidChange: nil)
+    }
+    
+    public func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        search(searchBar: searchBar, textDidChange: searchText)
+    }
+    
+    func search(searchBar: UISearchBar, textDidChange searchText: String?) {
         self.pokemonArrayFiltered.removeAll()
         if !searchBar.text!.isEmpty {
             self.searchActive = true
             self.isFinalToLoad = true
             for item in self.pokemonArray {
                 if let name = item?.name!.lowercased() {
-                    print(name)
                     if ((name.contains(searchBar.text!.lowercased()))) {
                         self.pokemonArrayFiltered.append(item)
                     }
@@ -172,6 +180,16 @@ extension MainViewController: UISearchBarDelegate {
             self.searchActive = false
             self.isFinalToLoad = false
         }
+        
         self.collectionView.reloadData()
+        
+    }
+    
+    public func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true
+    }
+
+    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false
     }
 }

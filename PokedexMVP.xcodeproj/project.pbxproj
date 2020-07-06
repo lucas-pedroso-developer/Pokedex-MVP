@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6A038ED324AE70330057B70C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A038ED224AE70330057B70C /* MainView.swift */; };
-		6A038ED524AF5EBF0057B70C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A038ED424AF5EBF0057B70C /* SearchBarView.swift */; };
 		6A038ED824B111AA0057B70C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6A038ED724B111AA0057B70C /* Kingfisher */; };
 		6AB8449F24A4ED55003C7EE1 /* GetPokemons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8449E24A4ED55003C7EE1 /* GetPokemons.swift */; };
 		6AB844A124A4ED82003C7EE1 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB844A024A4ED82003C7EE1 /* DomainError.swift */; };
@@ -233,7 +232,6 @@
 
 /* Begin PBXFileReference section */
 		6A038ED224AE70330057B70C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		6A038ED424AF5EBF0057B70C /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		6AB8448D24A4E667003C7EE1 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB8449024A4E667003C7EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AB8449E24A4ED55003C7EE1 /* GetPokemons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPokemons.swift; sourceTree = "<group>"; };
@@ -574,7 +572,6 @@
 				6AB8451B24A543F6003C7EE1 /* AlertView.swift */,
 				6AB8451D24A54412003C7EE1 /* LoadingView.swift */,
 				6A038ED224AE70330057B70C /* MainView.swift */,
-				6A038ED424AF5EBF0057B70C /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1181,7 +1178,6 @@
 				6AB8452424A544A5003C7EE1 /* MainPresenter.swift in Sources */,
 				6A038ED324AE70330057B70C /* MainView.swift in Sources */,
 				6AB8451C24A543F6003C7EE1 /* AlertView.swift in Sources */,
-				6A038ED524AF5EBF0057B70C /* SearchBarView.swift in Sources */,
 				6AB8451E24A54412003C7EE1 /* LoadingView.swift in Sources */,
 				6AB8452224A54493003C7EE1 /* MainViewModel.swift in Sources */,
 			);
