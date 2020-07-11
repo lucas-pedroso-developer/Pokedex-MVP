@@ -21,6 +21,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ZyZ-Aq-ibt"/>
                                 </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Pokedex" id="1Mk-zs-uJN"/>
                                 </items>
@@ -30,6 +34,8 @@
                             </activityIndicatorView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gsn-zE-8Ll">
                                 <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="ee4-1w-AFR" id="ssL-LR-WKF"/>
@@ -99,7 +105,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4GL-DD-ebq" firstAttribute="centerX" secondItem="FlV-Ie-wdn" secondAttribute="centerX" id="1no-RM-fvS"/>
                             <constraint firstItem="pR2-Nb-O3R" firstAttribute="leading" secondItem="FlV-Ie-wdn" secondAttribute="leading" id="2C2-0A-Al0"/>
