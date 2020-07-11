@@ -7,7 +7,6 @@ public final class RemoteGetPokemons: GetPokemons {
     private let httpClient: HttpGetClient
     
     public init(url: URL, httpClient: HttpGetClient) {
-    //public init(httpClient: HttpGetClient) {
         self.url = url
         self.httpClient = httpClient
     }

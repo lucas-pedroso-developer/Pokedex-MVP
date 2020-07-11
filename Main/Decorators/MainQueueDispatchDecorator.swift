@@ -25,3 +25,31 @@ extension MainQueueDispatchDecorator: GetPokemons where T: GetPokemons {
     )}
 }
     
+extension MainQueueDispatchDecorator: GetPokemonDetail where T: GetPokemonDetail {
+    
+    public func get(url: URL, completion: @escaping (Result<PokemonDetail, DomainError>) -> ()) {
+        instance.get(url: url, completion: { result in
+                self.dispatch {
+                    completion(result)
+                }
+            }
+        )
+    }
+    public func getSpecie(url: URL, completion: @escaping (Result<SpecieDetail, DomainError>) -> ()) {
+        instance.getSpecie(url: url, completion: { result in
+                self.dispatch {
+                    completion(result)
+                }
+            }
+        )
+    }
+    
+    public func getEvolution(url: URL, completion: @escaping (Result<EvolutionChainDetail, DomainError>) -> ()) {
+        instance.getEvolution(url: url, completion: { result in
+                self.dispatch {
+                    completion(result)
+                }
+            }
+        )
+    }
+}

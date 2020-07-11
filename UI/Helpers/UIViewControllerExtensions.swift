@@ -12,3 +12,10 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+
+extension String {
+    func floatValue() -> Float? {
+        return Float(self)
+    }
+}
