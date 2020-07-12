@@ -3,4 +3,54 @@
    uuid = "EC538AD1-41D1-4BD8-94EA-1A8ACB9F7559"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C28E090-6F02-4E54-B553-CCBD10CC66F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Data/UseCases/RemoteGetPokemons.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "get(url:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C28E090-6F02-4E54-B553-CCBD10CC66F4 - 37a281c90fd5c864"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Data.RemoteGetPokemons.get(url: Foundation.URL, completion: (Swift.Result&lt;Domain.Pokemons, Domain.DomainError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Data"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/PokedexMVP/Data/UseCases/RemoteGetPokemons.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "8C28E090-6F02-4E54-B553-CCBD10CC66F4 - 80cc55123b389e98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Data.HttpError&gt;) -&gt; () in Data.RemoteGetPokemons.get(url: Foundation.URL, completion: (Swift.Result&lt;Domain.Pokemons, Domain.DomainError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Data"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lucasdaniel/Desktop/PokedexMVP/Data/UseCases/RemoteGetPokemons.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

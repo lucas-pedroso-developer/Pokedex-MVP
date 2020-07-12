@@ -71,6 +71,10 @@
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="TkK-hf-zai" id="6u1-pk-3UV"/>
+                                            <outlet property="delegate" destination="TkK-hf-zai" id="4Xy-Nk-VSN"/>
+                                        </connections>
                                     </collectionView>
                                     <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isr-Qu-49Y">
                                         <rect key="frame" x="107.5" y="169.5" width="160" height="160"/>
@@ -79,7 +83,7 @@
                                                 <rect key="frame" x="8" y="8" width="144" height="144"/>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="rbv-IN-Yfj" firstAttribute="width" secondItem="Isr-Qu-49Y" secondAttribute="width" multiplier="0.9" id="9jh-BQ-1lL"/>
                                             <constraint firstItem="rbv-IN-Yfj" firstAttribute="centerY" secondItem="Isr-Qu-49Y" secondAttribute="centerY" id="O6h-0W-Ioe"/>
@@ -119,8 +123,8 @@
                                             <action selector="change:" destination="TkK-hf-zai" eventType="valueChanged" id="z2M-l7-TxJ"/>
                                         </connections>
                                     </segmentedControl>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY9-Id-X8m" userLabel="DataView">
-                                        <rect key="frame" x="35.5" y="95" width="304" height="238.5"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rY9-Id-X8m" userLabel="DataView">
+                                        <rect key="frame" x="435.5" y="95" width="304" height="238.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eht-mu-GIH">
                                                 <rect key="frame" x="0.0" y="0.0" width="91.5" height="69"/>
@@ -332,7 +336,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="abilityCell" id="FPi-N9-qrN" customClass="AbilitiesCollectionViewCell" customModule="Pokedex" customModuleProvider="target">
+                                                            <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="abilityCell" id="FPi-N9-qrN" customClass="AbilitiesCollectionViewCell" customModule="UI" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="7.5" width="103" height="32"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2xL-pD-Ftg">
@@ -363,6 +367,10 @@
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="TkK-hf-zai" id="cZ6-Cf-s6x"/>
+                                                            <outlet property="delegate" destination="TkK-hf-zai" id="dyG-Az-3HK"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -401,8 +409,8 @@
                                             <constraint firstItem="nIX-Yh-biQ" firstAttribute="width" secondItem="1ZS-lq-6a3" secondAttribute="width" multiplier="0.1" id="xVH-S7-vKt"/>
                                         </constraints>
                                     </view>
-                                    <view hidden="YES" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dld-Xs-AWf" userLabel="EvolutionView">
-                                        <rect key="frame" x="435.5" y="95" width="304" height="238.5"/>
+                                    <view hidden="YES" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dld-Xs-AWf" userLabel="EvolutionView">
+                                        <rect key="frame" x="35.5" y="95" width="304" height="238.5"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mlN-99-yFd">
                                                 <rect key="frame" x="0.0" y="2.5" width="304" height="233.5"/>
@@ -414,7 +422,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="evolutionCell" id="ncR-In-XYi" customClass="EvolutionCollectionViewCell" customModule="Pokedex" customModuleProvider="target">
+                                                    <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="evolutionCell" id="ncR-In-XYi" customClass="EvolutionCollectionViewCell" customModule="UI" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="110" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BMQ-Vf-FTF">
